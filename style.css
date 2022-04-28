@@ -1,0 +1,162 @@
+:root {
+  --background-color: #fff;
+  --select-color: #fff;
+  --button-color: #fff;
+  --border-color: #d1d5db;
+  --header-color: #111827;
+  --footer-color: #2b283a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #1f2937;
+    --select-color: #1f2937;
+    --button-color: #3d4b60;
+    --header-color: #fff;
+    --footer-color: #fff;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Inter", sans-serif;
+  background-color: var(--background-color);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.color-generator {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+}
+
+.header {
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.15);
+}
+
+.color-form {
+  padding: 1.5rem 1rem;
+  gap: 0.75rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+@media (min-width: 40rem) {
+  .color-form {
+    padding: 1.5rem 1rem;
+    display: flex;
+    gap: 0.75rem;
+    justify-content: space-between;
+  }
+}
+
+.color-picker {
+  border: 1px solid var(--border-color);
+  height: 42px;
+  width: 61px;
+  cursor: pointer;
+}
+
+.select-box {
+  color: var(--header-color);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  padding: 0.5625rem 0.8125rem;
+  background-color: var(--select-color);
+  border: solid 1px var(--border-color);
+  border-radius: 0.25rem;
+  width: 100%;
+  max-width: 20rem;
+  cursor: pointer;
+}
+
+.button {
+  color: var(--header-color);
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  padding: 0.75rem 0.6875rem;
+  background-color: var(--button-color);
+  border: solid 1px var(--border-color);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  grid-column: span 2;
+  transition: all ease-in-out 200ms;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: var(--header-color);
+  color: var(--button-color);
+}
+
+.colors {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.hex-codes {
+  font-size: 0.625rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: var(--footer-color);
+  text-align: center;
+  padding: 0.6875rem 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+@media (min-width: 40rem) {
+  .hex-codes {
+    font-size: 0.75rem;
+  }
+}
+
+.copy-button {
+  border: none;
+  background-color: inherit;
+  color: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.copy-div {
+  margin-top: -5rem;
+  background-color: var(--footer-color);
+  color: var(--button-color);
+  border-radius: 4px;
+  padding: 0.2rem 0.4rem;
+}

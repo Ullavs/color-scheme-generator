@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Scheme Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Stretch goal: click hex values to copy to clipboard -->
+
+    <section class="color-generator">
+      <header class="header">
+        <form class="color-form" id="color-form">
+          <input
+            type="color"
+            name="color"
+            class="color-picker"
+            value="#F55A5A"
+          />
+          <select class="select-box" name="mode">
+            <option value="monochrome">Monochrome</option>
+            <option value="monochrome-dark">Monochrome dark</option>
+            <option value="monochrome-light">Monochrome light</option>
+            <option value="analogic">Analogic</option>
+            <option value="complement">Complement</option>
+            <option value="analogic-complement">Analogic complement</option>
+            <option value="triad">Triad</option>
+            <option value="quad">Quad</option>
+          </select>
+          <button class="button">Get color scheme</button>
+        </form>
+      </header>
+      <main class="colors">
+        <div id="color1" style="background-color: #f55a5a"></div>
+        <div id="color2" style="background-color: #2b283a"></div>
+        <div id="color3" style="background-color: #fbf3ab"></div>
+        <div id="color4" style="background-color: #aad1b6"></div>
+        <div id="color5" style="background-color: #a626d3"></div>
+      </main>
+      <footer>
+        <ul class="hex-codes">
+          <li><button class="copy-button" id="hex-code1">#f55a5a</button></li>
+          <li><button class="copy-button" id="hex-code2">#2b283a</button></li>
+          <li><button class="copy-button" id="hex-code3">#fbf3ab</button></li>
+          <li><button class="copy-button" id="hex-code4">#aad1b6</button></li>
+          <li><button class="copy-button" id="hex-code5">#a626d3</button></li>
+        </ul>
+      </footer>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
