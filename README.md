@@ -24,4 +24,4 @@ Solo projects are meant to challenge the skills you've learnt so far through the
 
 ## Live URL
 
-- Check this project [online](colors.ullavs.nl)
+- Check this project [online](https://colors.ullavs.nl)
