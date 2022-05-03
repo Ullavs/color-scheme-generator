@@ -5,9 +5,9 @@ Solo projects are meant to challenge the skills you've learnt so far through the
 
 ## The challenge
 
-- There need to be a color picker and when you choose the color it will create a 'seed color'
+- There needs to be a color picker and when you choose the color this has to create a 'seed color'
 - The seed color you need to send to the Color API along with a color scheme mode
-- Clicking the button 'get color scheme' makes a request to The Color API and return a number of HEX values which represent the colors in your scheme
+- Clicking the button 'get color scheme' makes a request to The Color API and returns a number of HEX values which represent the colors in your scheme
 - Once you get the HEX values you display the colors and the HEX values on the page
 - Stretch goal: click HEX values to copy to clipboard
 
@@ -17,9 +17,10 @@ Solo projects are meant to challenge the skills you've learnt so far through the
 - CSS custom properties (CSS Grid, CSS Flexbox)
 - JavaScript
 - Mobile-first workflow
+- Light and dark version
 - [The Color API](https://www.thecolorapi.com/)
-- Figma design files
+- Figma design files from Scrimba
 
 ## Live URL
 
-- Check this project [online](movies.ullavs.nl)
+- Check this project [online](colors.ullavs.nl)
